@@ -1,0 +1,52 @@
+.fila1{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja{
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.fila2{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.cajap{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.cajaA{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.cajaB{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    gap: 2px
+}
+
+.cajaC{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.cajaD{
+    display: flex;
+    justify-content: space-between;
+
+}
