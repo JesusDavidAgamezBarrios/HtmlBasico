@@ -167,7 +167,163 @@ Cada sección del glosario está dividida en dos partes: HTML y CSS. Dentro de c
       </footer>
       ```
 
-... (continuar con los demás términos de HTML)
+15. **Enlace de Anclaje (a):**
+    - Descripción: Elemento para crear hipervínculos, permitiendo la navegación entre páginas o recursos.
+    - Ejemplo de código:
+      ```html
+      <a href="https://www.ejemplo.com">Visitar Ejemplo</a>
+      ```
+
+16. **Lista de Descripción (dl, dt, dd):**
+    - Descripción: Elementos para crear listas de descripción donde se proporciona un término y su descripción asociada.
+    - Ejemplo de código:
+      ```html
+      <dl>
+        <dt>Término 1</dt>
+        <dd>Descripción 1</dd>
+        <dt>Término 2</dt>
+        <dd>Descripción 2</dd>
+      </dl>
+      ```
+
+17. **Elemento de Marca de Tiempo (time):**
+    - Descripción: Elemento para representar fechas y horas.
+    - Ejemplo de código:
+      ```html
+      <p>La fecha actual es <time datetime="2024-01-30">30 de enero de 2024</time>.</p>
+      ```
+
+18. **Elemento de Detalles (details) y Resumen (summary):**
+    - Descripción: Elementos para crear un área de detalles que se puede mostrar u ocultar.
+    - Ejemplo de código:
+      ```html
+      <details>
+        <summary>Mostrar más</summary>
+        <p>Contenido adicional.</p>
+      </details>
+      ```
+
+19. **Elemento de Artículo de Detalles (summary):**
+    - Descripción: Elemento de resumen utilizado dentro de un elemento `<details>` para proporcionar un encabezado.
+    - Ejemplo de código:
+      ```html
+      <details>
+        <summary>Mostrar más</summary>
+        <p>Contenido adicional.</p>
+      </details>
+      ```
+
+20. **Elemento de Área de Encabezado (headings - h1, h2, ..., h6):**
+    - Descripción: Elementos para definir encabezados de diferentes niveles, indicando la jerarquía de la información.
+    - Ejemplo de código:
+      ```html
+      <h1>Encabezado de Nivel 1</h1>
+      <h2>Encabezado de Nivel 2</h2>
+      ```
+
+21. **Elemento de Línea Horizontal (hr):**
+    - Descripción: Elemento para representar una línea horizontal, útil para separar secciones.
+    - Ejemplo de código:
+      ```html
+      <p>Texto antes de la línea horizontal</p>
+      <hr>
+      <p>Texto después de la línea horizontal</p>
+      ```
+
+22. **Comentario HTML:**
+    - Descripción: Comentario que no se muestra en la página pero es útil para dejar notas en el código.
+    - Ejemplo de código:
+      ```html
+      <!-- Este es un comentario en HTML -->
+      ```
+
+23. **Elemento de Imagen Map (map):**
+    - Descripción: Elemento para asociar áreas específicas de una imagen con enlaces o acciones.
+    - Ejemplo de código:
+      ```html
+      <img src="plano.png" alt="Mapa de un edificio" usemap="#edificioMapa">
+      <map name="edificioMapa">
+        <area shape="rect" coords="34,44,270,350" alt="Área 1" href="area1.html">
+        <area shape="circle" coords="290,172,20" alt="Área 2" href="area2.html">
+      </map>
+      ```
+
+24. **Elemento de Marco (iframe):**
+    - Descripción: Elemento para insertar un marco que puede mostrar contenido de otra página.
+    - Ejemplo de código:
+      ```html
+      <iframe src="otra_pagina.html" width="600" height="400" title="Contenido embebido"></iframe>
+      ```
+
+25. **Elemento de Audio (audio) y Video (video):**
+    - Descripción: Elementos para insertar contenido de audio y video respectivamente.
+    - Ejemplo de código (Audio):
+      ```html
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+      ```
+      Ejemplo de código (Video):
+      ```html
+      <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+      ```
+
+26. **Elemento de Cita (blockquote) y Cita Corta (q):**
+    - Descripción: Elementos para representar citas, ya sea una cita extensa o una cita corta.
+    - Ejemplo de código:
+      ```html
+      <blockquote>
+        <p>Este es un bloque de cita extensa.</p>
+      </blockquote>
+      <p>El autor dijo <q>Esta es una cita corta</q>.</p>
+      ```
+
+27. **Elemento de Marca de Progreso (progress):**
+    - Descripción: Elemento para representar la finalización de una tarea, como una barra de progreso.
+    - Ejemplo de código:
+      ```html
+      <progress value="70" max="100">70%</progress>
+      ```
+
+28. **Elemento de Lista Desplegable (select) y Opción de Lista Desplegable (option):**
+    - Descripción: Elementos para crear listas desplegables.
+    - Ejemplo de código:
+      ```html
+      <select>
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+      </select>
+      ```
+
+29. **Elemento de Detención de Texto (br):**
+    - Descripción: Elemento para indicar un salto de línea dentro de un texto.
+    - Ejemplo de código:
+      ```html
+      <p>Este es un texto con un <br> salto de línea.</p>
+      ```
+
+30. **Elemento de Definición de Abreviatura/Acrónimo (abbr):**
+    - Descripción: Elemento para definir una abreviatura o acrónimo.
+    - Ejemplo de código:
+      ```html
+      <p>La <abbr title="Organización de las Naciones Unidas">ONU</abbr> es una organización internacional.</p>
+      ```
+
+# Términos más específicos
+
+**Atributo "alt" (Alternativo) para Imágenes:**
+- Descripción: Proporciona un texto alternativo para describir la imagen, útil para accesibilidad y en caso de que la imagen no se cargue.
+- Ejemplo de código:
+  ```html
+  <img src="foto.jpg" alt="Familia disfrutando de un día soleado en el parque">
+
+
+Este glosario cubre una amplia variedad de términos y conceptos en HTML. Puedes personalizar cualquier sección según tus necesidades o agregar más ejemplos si es necesario. ¡Espero que esta información sea útil para los nuevos programadores!
+
 
 ### CSS (Cascading Style Sheets):
 
