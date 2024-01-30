@@ -15,8 +15,10 @@ Cada sección del glosario está dividida en dos partes: HTML y CSS. Dentro de c
    - Ejemplo de código:
      ```html
      <!DOCTYPE html>
-     <html>
+     <html lang="es">
        <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>Mi Página Web</title>
        </head>
        <body>
@@ -44,7 +46,7 @@ Cada sección del glosario está dividida en dos partes: HTML y CSS. Dentro de c
    - Descripción: Información adicional proporcionada dentro de las etiquetas para modificar o personalizar un elemento.
    - Ejemplo de código:
      ```html
-     <a href="https://www.ejemplo.com">Enlace de ejemplo</a>
+     <a href="https://www.ejemplo.com" target="_blank" title="Enlace de ejemplo">Enlace de ejemplo</a>
      ```
 
 5. **DOCTYPE:**
@@ -62,6 +64,7 @@ Cada sección del glosario está dividida en dos partes: HTML y CSS. Dentro de c
        <meta charset="UTF-8">
        <title>Mi Página</title>
        <link rel="stylesheet" href="estilos.css">
+       <script src="script.js" defer></script>
      </head>
      ```
 
@@ -72,6 +75,7 @@ Cada sección del glosario está dividida en dos partes: HTML y CSS. Dentro de c
      <body>
        <h1>Encabezado</h1>
        <p>Párrafo de contenido.</p>
+       <img src="imagen.jpg" alt="Descripción de la imagen">
      </body>
      ```
 
@@ -98,9 +102,69 @@ Cada sección del glosario está dividida en dos partes: HTML y CSS. Dentro de c
       ```html
       <form action="/procesar" method="post">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
+        <input type="text" id="nombre" name="nombre" required>
         <input type="submit" value="Enviar">
       </form>
+      ```
+
+11. **Input:**
+    - Descripción: Elemento de formulario para recibir información del usuario.
+    - Ejemplo de código:
+      ```html
+      <input type="text" placeholder="Nombre completo" name="nombre">
+      ```
+
+12. **Imagen (img):**
+    - Descripción: Elemento para mostrar imágenes en una página.
+    - Ejemplo de código:
+      ```html
+      <img src="imagen.jpg" alt="Descripción de la imagen">
+      ```
+
+13. **Tabla (table):**
+    - Descripción: Elemento para organizar datos en filas y columnas.
+    - Ejemplo de código:
+      ```html
+      <table>
+        <thead>
+          <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+          </tr>
+        </tbody>
+      </table>
+      ```
+
+14. **Encabezado (header), Sección (section), Artículo (article), Barra lateral (aside), Pie de página (footer):**
+    - Descripción: Elementos semánticos que definen la estructura y significado de diferentes secciones de una página.
+    - Ejemplo de código:
+      ```html
+      <header>
+        <h1>Encabezado de la Página</h1>
+      </header>
+      <section>
+        <article>
+          <h2>Artículo 1</h2>
+          <p>Contenido del artículo.</p>
+        </article>
+        <article>
+          <h2>Artículo 2</h2>
+          <p>Contenido del artículo.</p>
+        </article>
+      </section>
+      <aside>
+        <h2>Barra lateral</h2>
+        <p>Contenido adicional.</p>
+      </aside>
+      <footer>
+        <p>Pie de página © 2024</p>
+      </footer>
       ```
 
 ... (continuar con los demás términos de HTML)
@@ -283,6 +347,55 @@ Cada sección del glosario está dividida en dos partes: HTML y CSS. Dentro de c
       }
       ```
 
+16. **Transformaciones (transform):**
+    - Descripción: Propiedad para aplicar transformaciones 2D y 3D a elementos.
+    - Ejemplo de código:
+      ```css
+      .rotar {
+        transform: rotate(45deg);
+      }
+      ```
+
+17. **Fuentes y Tipografía:**
+    - Descripción: Propiedades para controlar la apariencia del texto, como `font-family`, `font-size`, y `font-weight`.
+    - Ejemplo de código:
+      ```css
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      ```
+
+18. **Sombra (box-shadow):**
+    - Descripción: Propiedad para agregar sombras a elementos.
+    - Ejemplo de código:
+      ```css
+      div {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      ```
+
+19. **Gradientes (linear-gradient, radial-gradient):**
+    - Descripción: Propiedades para crear fondos con degradados lineales o radiales.
+    - Ejemplo de código:
+      ```css
+      div {
+        background: linear-gradient(to right, #ffcc00, #ff3300);
+      }
+      ```
+
+20. **Overflow:**
+    - Descripción: Propiedad para controlar cómo se maneja el contenido que desborda un contenedor.
+    - Ejemplo de código:
+      ```css
+      div {
+        overflow: hidden;
+      }
+      ```
+
+... (continuar con los demás términos de CSS)
+
 ## Contribuir al Glosario
 
 Si deseas contribuir agregando nuevos términos, conceptos o mejorando las descripciones existentes, sigue estos pasos:
@@ -297,4 +410,4 @@ Agradecemos cualquier contribución que ayude a mejorar y expandir este recurso 
 
 ## Licencia
 
-Este glosario está bajo la [Licencia MIT](LICENSE).xxxxxxxxxx 
+Este glosario está bajo la [Licencia MIT](LICENSE).
