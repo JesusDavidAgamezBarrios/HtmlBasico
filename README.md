@@ -419,6 +419,212 @@ Este glosario cubre una amplia variedad de términos y conceptos en HTML. Puedes
        grid-template-columns: repeat(3, 1fr);
      }
      ```
+    
+## Flexbox:
+
+### Propiedades del Contenedor (Flex Container):
+
+1. **`flex-flow`:** Combina `flex-direction` y `flex-wrap` en una propiedad.
+
+   ```
+   cssCopy code.container {
+     flex-flow: row wrap;
+   }
+   ```
+
+2. **`align-content`:** Alinea líneas flexibles en el contenedor cuando hay espacio adicional en el eje transversal.
+
+   ```
+   cssCopy code.container {
+     align-content: space-between;
+   }
+   ```
+
+### Propiedades del Elemento (Flex Item):
+
+1. **`flex-grow`:** Especifica cuánto debe crecer un elemento flexible con respecto a los demás.
+
+   ```
+   cssCopy code.item {
+     flex-grow: 2;
+   }
+   ```
+
+2. **`flex-shrink`:** Especifica cuánto debe encogerse un elemento flexible con respecto a los demás.
+
+   ```
+   cssCopy code.item {
+     flex-shrink: 0;
+   }
+   ```
+
+3. **`flex-basis`:** Establece el tamaño inicial de un elemento flexible antes de que comience a crecer o a encogerse.
+
+   ```
+   cssCopy code.item {
+     flex-basis: 150px;
+   }
+   ```
+
+### Alineación Individual (Flex Item):
+
+1. `align-self`:
+
+    Anula la alineación predeterminada para un elemento específico.
+
+   ```
+   cssCopy code.item {
+     align-self: flex-end;
+   }
+   ```
+
+### Propiedades del Contenedor (Flex Container):
+
+1. `justify-content`:
+
+    Alinea elementos a lo largo del eje principal (flex-start, flex-end, center, space-between, space-around, space-evenly).
+
+   ```
+   cssCopy code.container {
+     justify-content: space-around;
+   }
+   ```
+
+### Propiedades del Elemento (Flex Item):
+
+1. `order`:
+
+    Establece el orden de los elementos hijos.
+
+   ```
+   cssCopy code.item {
+     order: 2;
+   }
+   ```
+
+### Alineación Individual (Flex Item):
+
+1. `align-content`:
+
+    Alinea el contenido en el eje transversal cuando hay espacio adicional.
+
+   ```
+   cssCopy code.item {
+     align-content: flex-start;
+   }
+   ```
+
+
+
+## Grid:
+
+### Propiedades del Contenedor (Grid Container):
+
+1. **`grid-template-areas`:** Define el diseño de la cuadrícula utilizando nombres de áreas.
+
+   ```
+   cssCopy code.container {
+     grid-template-areas:
+       "header header header"
+       "main main sidebar"
+       "footer footer footer";
+   }
+   ```
+
+2. **`grid-auto-flow`:** Controla cómo se colocan los elementos automáticamente en la cuadrícula (row, column, dense).
+
+   ```
+   cssCopy code.container {
+     grid-auto-flow: column;
+   }
+   ```
+
+### Propiedades de Líneas y Celdas:
+
+1. **`grid-column-gap`, `grid-row-gap`, `grid-gap`:** Especifica el espacio entre las columnas, filas o ambos.
+
+   ```
+   cssCopy code.container {
+     grid-column-gap: 20px;
+     grid-row-gap: 10px;
+   }
+   ```
+
+2. **`grid-template`:** Atajo para `grid-template-rows` y `grid-template-columns`.
+
+   ```
+   cssCopy code.container {
+     grid-template: 100px 1fr / repeat(3, 1fr);
+   }
+   ```
+
+### Alineación en la Cuadrícula:
+
+1. **`justify-items`, `align-items`:** Alinea todos los elementos en la cuadrícula a lo largo del eje principal y transversal.
+
+   ```
+   cssCopy code.container {
+     justify-items: center;
+     align-items: end;
+   }
+   ```
+
+2. **`justify-self`, `align-self`:** Alinea un elemento específico en la cuadrícula.
+
+   ```
+   cssCopy code.item {
+     justify-self: start;
+     align-self: center;
+   }
+   ```
+
+### Propiedades del Contenedor (Grid Container):
+
+1. `grid-template-columns`, `grid-template-rows`:
+
+    Especifica el tamaño y la estructura de las columnas y filas.
+
+   ```
+   cssCopy code.container {
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 100px 200px;
+   }
+   ```
+
+### Propiedades de Líneas y Celdas:
+
+1. `grid-template-areas`:
+
+    Define el diseño de la cuadrícula utilizando nombres de áreas.
+
+   ```
+   cssCopy code.container {
+     grid-template-areas:
+       "header header header"
+       "main main sidebar"
+       "footer footer footer";
+   }
+   ```
+
+### Alineación en la Cuadrícula:
+
+1. **`place-items`:** Atajo para `align-items` y `justify-items`.
+
+   ```
+   cssCopy code.container {
+     place-items: center start;
+   }
+   ```
+
+2. **`place-self`:** Atajo para `align-self` y `justify-self`.
+
+   ```
+   cssCopy code.item {
+     place-self: end center;
+   }
+   ```
+
+
 
 9. **Media Query:**
    - Descripción: Técnica para aplicar estilos específicos según las características del dispositivo.
